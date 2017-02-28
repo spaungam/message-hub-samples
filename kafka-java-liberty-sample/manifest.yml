@@ -1,11 +1,11 @@
 applications:
 - path: target/defaultServer
-  memory: 256M
+  memory: 512M
   instances: 1
   buildpack: liberty-for-java
   domain: mybluemix.net 
   name: MessageHubLibertyApp
   disk_quota: 1024M
   random-route: true
-  services:
-    - "message-hub-service"
+  #services:
+  #  - "message-hub-service"
